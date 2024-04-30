@@ -12,13 +12,11 @@ export const aboutSection: AboutSectionType = {
         'Java',
         'C++',
         'Python',
-        'HTML',
-        'JavaScript',
         'CSS',
-        'Node.js',
+        'JavaScript',
         'PHP',
-        'React.js',
-        'MySQL'
+        'Node.js',
+        'React.js'
     ],
     },
     img: '/mahmudul-hasan.png',
