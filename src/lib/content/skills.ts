@@ -23,6 +23,7 @@ export const skillsSection: SkillsSectionType = {
         { name: 'C++', icon: 'vscode-icons:file-type-cpp' },
         { name: 'java', icon: 'vscode-icons:file-type-java' },
         { name: 'kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'dart', icon: 'vscode-icons:file-type-dartlang' },
         { name: 'python', icon: 'vscode-icons:file-type-python' },
         { name: 'html-5', icon: 'vscode-icons:file-type-html' },
         { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
@@ -31,6 +32,7 @@ export const skillsSection: SkillsSectionType = {
         { name: 'reactjs', icon: 'logos:react' },
         { name: 'shell script', icon: 'vscode-icons:file-type-shell' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
+        { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
         ],
     },
     {
