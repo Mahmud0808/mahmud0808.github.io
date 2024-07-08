@@ -6,6 +6,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Quirklr',
+      url: 'https://github.com/Mahmud0808/Quirklr',
+      repo: 'https://github.com/Mahmud0808/Quirklr',
+      img: 'https://i.postimg.cc/hSL5JvrB/quirklr.png',
+      year: 2024,
+      tags: ['Next JS', 'Tailwind CSS', 'MongoDB'],
+    },
+    {
+      id: getId(),
       name: 'Nexara Cart',
       url: 'https://github.com/Mahmud0808/NexaraCart',
       repo: 'https://github.com/Mahmud0808/NexaraCart',
