@@ -14,9 +14,9 @@ export const aboutSection: AboutSectionType = {
         'Dart',
         'Python',
         'JavaScript',
-        'PHP',
         'Node.js',
-        'React.js'
+        'React.js',
+        'Next.js'
     ],
     },
     img: '/mahmudul-hasan.png',
