@@ -6,6 +6,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Quanta Bank',
+      url: 'https://github.com/Mahmud0808/QuantaBank',
+      repo: 'https://github.com/Mahmud0808/QuantaBank',
+      img: 'https://i.postimg.cc/66gtfQJP/quanta-bank.png',
+      year: 2024,
+      tags: ['Next JS', 'Tailwind CSS', 'Appwrite'],
+    },
+    {
+      id: getId(),
       name: 'Quirklr',
       url: 'https://github.com/Mahmud0808/Quirklr',
       repo: 'https://github.com/Mahmud0808/Quirklr',
