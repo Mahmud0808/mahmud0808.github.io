@@ -6,6 +6,15 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'ResumeAI',
+      url: 'https://github.com/Mahmud0808/ResumeAI',
+      repo: 'https://github.com/Mahmud0808/ResumeAI',
+      img: 'https://i.postimg.cc/DnJHZ229/Resume-AI.png',
+      year: 2024,
+      tags: ['Next JS', 'Tailwind CSS', 'MongoDB'],
+    },
+    {
+      id: getId(),
       name: 'Quanta Bank',
       url: 'https://github.com/Mahmud0808/QuantaBank',
       repo: 'https://github.com/Mahmud0808/QuantaBank',
