@@ -9,7 +9,7 @@ export const projectsSection: ProjectsSectionType = {
       name: 'Melodify',
       url: 'https://github.com/Mahmud0808/Melodify',
       repo: 'https://github.com/Mahmud0808/Melodify',
-      img: 'https://i.postimg.cc/gdSxhMKB/68747470733a2f2f692e6962622e636f2f5151343150785a2f4d656c6f646966792e706e67.png',
+      img: 'https://i.postimg.cc/PxJRDhw1/Melodify.png',
       year: 2024,
       tags: ['Flutter', 'Dart', 'Music Player'],
     },
