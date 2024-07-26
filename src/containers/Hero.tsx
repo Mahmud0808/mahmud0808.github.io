@@ -29,7 +29,7 @@ const Hero = () => {
       id="hero"
       className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-5 xs:mt-0"
     >
-      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
+      <div className="max-w-5xl text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
         <motion.p
           variants={slideUp({ delay: getAnimationDelay(0) })}
           initial="hidden"
@@ -49,7 +49,6 @@ const Hero = () => {
             speed={50}
             style={{
               color: 'inherit',
-              fontSize: 'text-4xl',
               fontWeight: 'bold',
               display: 'inline-block',
             }}
