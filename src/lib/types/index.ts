@@ -30,8 +30,8 @@ export type ProjectType = {
   url: string;
   year: number;
   img: string;
-  tags: string[];
   repo: string;
+  projectSkills: SkillType[];
 };
 
 export interface FeaturedProjectType
@@ -47,6 +47,6 @@ export type StringKeyValueType = {
 
 export type Direction = 'up' | 'right' | 'down' | 'left';
 
-export type SoftwareSkillType = { name: string; icon: string };
+export type SkillType = { name: string; icon: string };
 
 export type BreakpointType = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';

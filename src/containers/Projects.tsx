@@ -53,7 +53,7 @@ const Projects = () => {
       {projects.length > PROJECTS_INITIALLY && (
         <Button
           size="lg"
-          className="!mt-20"
+          className="!mt-20 rounded-md"
           center
           onClick={() => setShowMore((prev) => !prev)}
         >

@@ -5,7 +5,6 @@ import {
   NavLinkType,
   ProjectType,
   SocialLinkType,
-  SoftwareSkillType,
 } from '.';
 
 export interface Section {
@@ -47,7 +46,7 @@ type SkillType = {
     dark: string;
   };
   points: string[];
-  softwareSkills: SoftwareSkillType[];
+  projectSkills: SkillType[];
 };
 
 export interface SkillsSectionType extends Section {

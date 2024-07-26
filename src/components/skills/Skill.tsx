@@ -1,5 +1,5 @@
 'use client';
-import { SoftwareSkillType } from '@/lib/types';
+import { SkillType } from '@/lib/types';
 import { getId } from '@/lib/utils/helper';
 
 import { ListItem, ShowLottie, SkillIcon } from '@/components';
@@ -10,7 +10,7 @@ type Props = {
   lottie?: any;
   title: string;
   points: string[];
-  skills: SoftwareSkillType[];
+  skills: SkillType[];
   className?: string;
 } & MotionProps;
 

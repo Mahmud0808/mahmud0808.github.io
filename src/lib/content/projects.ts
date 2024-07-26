@@ -9,9 +9,13 @@ export const projectsSection: ProjectsSectionType = {
       name: 'Melodify',
       url: 'https://github.com/Mahmud0808/Melodify',
       repo: 'https://github.com/Mahmud0808/Melodify',
-      img: 'https://i.postimg.cc/PxJRDhw1/Melodify.png',
+      img: 'https://i.postimg.cc/WbYQ7f55/Melodify.png',
       year: 2024,
-      tags: ['Flutter', 'Dart', 'Music Player'],
+      projectSkills: [
+        { name: 'Flutter', icon: 'vscode-icons:file-type-flutter' },
+        { name: 'Dart', icon: 'vscode-icons:file-type-dartlang' },
+        { name: 'Music Player', icon: 'emojione-v1:music-descend' },
+      ],
     },
     {
       id: getId(),
@@ -20,7 +24,12 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/ResumeAI',
       img: 'https://i.postimg.cc/DnJHZ229/Resume-AI.png',
       year: 2024,
-      tags: ['Next JS', 'Tailwind CSS', 'MongoDB'],
+      projectSkills: [
+        { name: 'Next.js', icon: 'file-icons:nextjs' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+        { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
+        { name: 'Clerk', icon: 'simple-icons:clerk' },
+      ],
     },
     {
       id: getId(),
@@ -29,7 +38,14 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/QuantaBank',
       img: 'https://i.postimg.cc/66gtfQJP/quanta-bank.png',
       year: 2024,
-      tags: ['Next JS', 'Tailwind CSS', 'Appwrite'],
+      projectSkills: [
+        { name: 'Next.js', icon: 'file-icons:nextjs' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+        { name: 'MySQL', icon: 'tabler:brand-mysql' },
+        { name: 'Clerk', icon: 'simple-icons:clerk' },
+        { name: 'Appwrite', icon: 'logos:appwrite-icon' },
+        { name: 'Sentry', icon: 'vscode-icons:file-type-sentry' },
+      ],
     },
     {
       id: getId(),
@@ -38,7 +54,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/Quirklr',
       img: 'https://i.postimg.cc/hSL5JvrB/quirklr.png',
       year: 2024,
-      tags: ['Next JS', 'Tailwind CSS', 'MongoDB'],
+      projectSkills: [
+        { name: 'Next.js', icon: 'file-icons:nextjs' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+        { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
+      ],
     },
     {
       id: getId(),
@@ -47,7 +67,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/NexaraCart',
       img: 'https://i.postimg.cc/0ksn4Wjx/Nexara-Cart.png',
       year: 2024,
-      tags: ['Flutter', 'Dart', 'Full-Stack'],
+      projectSkills: [
+        { name: 'Flutter', icon: 'vscode-icons:file-type-flutter' },
+        { name: 'Dart', icon: 'vscode-icons:file-type-dartlang' },
+      ],
     },
     {
       id: getId(),
@@ -56,7 +79,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/LumiWeather',
       img: 'https://i.postimg.cc/B4GHsLBZ/Lumi-Weather.png',
       year: 2024,
-      tags: ['Flutter', 'Dart', 'Minimal'],
+      projectSkills: [
+        { name: 'Flutter', icon: 'vscode-icons:file-type-flutter' },
+        { name: 'Dart', icon: 'vscode-icons:file-type-dartlang' },
+      ],
     },
     {
       id: getId(),
@@ -65,7 +91,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/TelegramJoinRequestVerifier',
       img: 'https://i.postimg.cc/hgntt96Y/TGJoin-Bot.png',
       year: 2024,
-      tags: ['Telegram', 'Bot', 'Kotlin'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'Telegram', icon: 'logos:telegram' },
+        { name: 'Bot', icon: 'bxs:bot' },
+      ],
     },
     {
       id: getId(),
@@ -74,7 +104,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://mahmud0808.github.io/MusicPlayer/',
       img: 'https://i.postimg.cc/4GFBY02y/uniride.png',
       year: 2024,
-      tags: ['Kotlin', 'Jetpack Compose', 'MVVM'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
+        { name: 'Location Tracker', icon: 'jam:gps-f' },
+      ],
     },
     {
       id: getId(),
@@ -83,7 +117,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/Conversa',
       img: 'https://i.postimg.cc/VsgKtc87/conversa.png',
       year: 2024,
-      tags: ['Kotlin', 'Jetpack Compose', 'MVVM'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'Gemini API', icon: 'logos:google-gemini' },
+      ],
     },
     {
       id: getId(),
@@ -92,7 +129,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/Rushly',
       img: 'https://i.postimg.cc/yN3mpw2z/rushly.webp',
       year: 2024,
-      tags: ['Kotlin', 'Firebase', 'MVVM'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
+      ],
     },
     {
       id: getId(),
@@ -101,7 +141,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/WarThunderWiki',
       img: 'https://i.postimg.cc/VvV21ysW-/opengraph-wt.jpg',
       year: 2024,
-      tags: ['Java', 'Jsoup', 'HTML'],
+      projectSkills: [
+        { name: 'Java', icon: 'hugeicons:java' },
+        { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+        { name: 'War Thunder', icon: 'healthicons:war' },
+      ],
     },
     {
       id: getId(),
@@ -110,7 +154,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/RemiLab',
       img: 'https://i.postimg.cc/Fs9sP3wr/remilab.png',
       year: 2024,
-      tags: ['Java', 'Preference Manager'],
+      projectSkills: [
+        { name: 'Java', icon: 'hugeicons:java' },
+        { name: 'Shell Script', icon: 'vscode-icons:file-type-shell' },
+        { name: 'Preference Manager', icon: 'material-symbols:room-preferences-rounded' },
+      ],
     },
     {
       id: getId(),
@@ -119,7 +167,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/Sonix-Spectrum',
       img: 'https://i.postimg.cc/cCs23Vcf/sonixspectrum.jpg',
       year: 2024,
-      tags: ['Java', 'Shell Scripting'],
+      projectSkills: [
+        { name: 'Java', icon: 'hugeicons:java' },
+        { name: 'Shell Script', icon: 'vscode-icons:file-type-shell' },
+        { name: 'Kernel Manager', icon: 'ph:cpu-bold' },
+      ],
     },
     {
       id: getId(),
@@ -128,7 +180,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/SheGuard',
       img: 'https://i.postimg.cc/rVfKvhCd/sheguard.png',
       year: 2023,
-      tags: ['Java', 'Firebase'],
+      projectSkills: [
+        { name: 'Java', icon: 'hugeicons:java' },
+        { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
+      ],
     },
     {
       id: getId(),
@@ -137,7 +192,12 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/MusicPlayer',
       img: 'https://i.postimg.cc/D2TNDhgz/musicplayer.png',
       year: 2023,
-      tags: ['Responsive Web', 'JavaScript'],
+      projectSkills: [
+        { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+        { name: 'JavaScript', icon: 'vscode-icons:file-type-js' },
+        { name: 'Music Player', icon: 'emojione-v1:music-descend' },
+      ],
     },
     {
       id: getId(),
@@ -146,7 +206,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/QuizMania',
       img: 'https://i.postimg.cc/R404s70Y/quizmania.png',
       year: 2023,
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      projectSkills: [
+        { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+        { name: 'JavaScript', icon: 'vscode-icons:file-type-js' },
+      ],
     },
     {
       id: getId(),
@@ -155,7 +219,11 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/FRAS',
       img: 'https://i.postimg.cc/59phw2QG/fras.jpg',
       year: 2022,
-      tags: ['Python', 'Flask', 'Image Processing'],
+      projectSkills: [
+        { name: 'Python', icon: 'vscode-icons:file-type-python' },
+        { name: 'Flask', icon: 'simple-icons:flask' },
+        { name: 'Image Processing', icon: 'ic:baseline-face' },
+      ],
     },
     {
       id: getId(),
@@ -164,7 +232,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/Gadgets',
       img: 'https://i.postimg.cc/MqWPSt2W/gadgets.png',
       year: 2022,
-      tags: ['Design', 'HTML', 'CSS'],
+      projectSkills: [
+        { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+      ],
     },
     {
       id: getId(),
@@ -173,7 +244,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/AnotherTheme',
       img: 'https://i.postimg.cc/FN3T3qyg/heroimage.png',
       year: 2022,
-      tags: ['Theme', 'Kotlin'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'XML', icon: 'vscode-icons:file-type-xml' },
+      ],
     },
     {
       id: getId(),
@@ -182,16 +256,22 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/PinkBeanMonet',
       img: 'https://i.postimg.cc/xngVLcyP/heroimage.png',
       year: 2022,
-      tags: ['Theme', 'Kotlin', 'Material You'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'XML', icon: 'vscode-icons:file-type-xml' },
+      ],
     },
     {
       id: getId(),
       name: 'Pink Bean',
       url: 'https://www.pling.com/p/1732643',
-      repo: 'https://github.com/Mahmud0808/PinkBeanMonet',
+      repo: 'https://github.com/Mahmud0808/PinkBean',
       img: 'https://i.postimg.cc/v8McjcKm/heroimage.png',
       year: 2022,
-      tags: ['Theme', 'Kotlin'],
+      projectSkills: [
+        { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
+        { name: 'XML', icon: 'vscode-icons:file-type-xml' },
+      ],
     },
     {
       id: getId(),
@@ -200,7 +280,10 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/OverlayBuilder',
       img: 'https://i.postimg.cc/DznZSzXZ/overlaybuilder.jpg',
       year: 2021,
-      tags: ['GitHub Actions', 'Shell Scripting'],
+      projectSkills: [
+        { name: 'GitHub Actions', icon: 'fa-brands:github' },
+        { name: 'Shell Script', icon: 'vscode-icons:file-type-shell' },
+      ],
     },
     {
       id: getId(),
@@ -209,7 +292,12 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/Mahmud0808/ToDoList',
       img: 'https://i.postimg.cc/BqfxBQCm/todolist.png',
       year: 2021,
-      tags: ['PHP', 'MySQL', 'Glassmorphism'],
+      projectSkills: [
+        { name: 'HTML', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS', icon: 'vscode-icons:file-type-css' },
+        { name: 'PHP', icon: 'vscode-icons:file-type-php' },
+        { name: 'MySQL', icon: 'tabler:brand-mysql' },
+      ],
     },
   ],
 };
