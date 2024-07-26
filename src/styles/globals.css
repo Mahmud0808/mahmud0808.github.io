@@ -40,6 +40,22 @@
 
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-bg-secondary);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 

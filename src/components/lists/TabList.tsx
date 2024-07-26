@@ -29,10 +29,17 @@ const TabList = ({ experiences }: Props) => {
           top: `calc(${activeExperience}*2.5rem)`,
         };
 
+  const sliderBackgroundStyle =
+    windowWidth <= sm
+      ? {
+          width: `calc(${experiences.length}*120px)`,
+        }
+      : {};
+
   return (
     <div className="flex flex-col sm:flex-row text-sm md:text-base gap-6 md:gap-10 min-h-[250px]">
       {/* Sidebar */}
-      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[180px]">
+      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[180px] no-scrollbar">
         {experiences.map(({ company }, i) => (
           <button
             key={getId()}
@@ -45,7 +52,10 @@ const TabList = ({ experiences }: Props) => {
           </button>
         ))}
         {/* Slider */}
-        <div className="absolute h-0.5 w-full sm:w-0.5 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 bg-dark-3"></div>
+        <div
+          style={sliderBackgroundStyle}
+          className="absolute h-0.5 w-full sm:w-0.5 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 max-sm:right-0 bg-dark-3"
+        ></div>
         <div
           style={sliderStyle}
           className="absolute h-0.5 w-[120px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
