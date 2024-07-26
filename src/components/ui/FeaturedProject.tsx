@@ -18,7 +18,7 @@ const FeaturedProject = ({
   repo,
   description,
   tasks,
-  tags,
+  projectSkills,
   align = 'left',
   ...rest
 }: Props) => {
@@ -98,8 +98,8 @@ const FeaturedProject = ({
             align === 'left' && 'lg:justify-start'
           )}
         >
-          {tags.map((tag) => (
-            <span key={tag.replaceAll(' ', '')}>{tag}</span>
+          {projectSkills.map(({ name }) => (
+            <span key={name.replaceAll(' ', '')}>{name}</span>
           ))}
         </p>
 
