@@ -17,7 +17,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       id: getId(),
       name: 'ColorBlendr',
       description: 'Customize Material You colors of your device.',
-      tasks: 'An Android app for customizing Material You colors on devices with Android 12+. It lets you tweak accent colors, background saturation, and more for a personalized look.',
+      tasks: 'An application for customizing Material You colors on devices with Android 12+. It lets you tweak accent colors, background saturation, and more for a personalized look.',
       url: 'https://github.com/Mahmud0808/ColorBlendr',
       img: 'https://i.postimg.cc/ZmjNmrk4/colorblendr.png',
       tags: ['Java', 'AIDL', 'Material You', 'Color Theory'],

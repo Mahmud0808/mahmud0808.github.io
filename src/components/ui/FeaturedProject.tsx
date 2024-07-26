@@ -32,7 +32,7 @@ const FeaturedProject = ({
     >
       <div
         className={cn(
-          'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded overflow-hidden shadow-2xl group',
+          'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded-lg overflow-hidden shadow-2xl group',
 
           align === 'left' && 'ml-auto'
         )}
@@ -77,7 +77,7 @@ const FeaturedProject = ({
           </h2>
         </div>
 
-        <div className="lg:bg-bg-secondary rounded-sm lg:shadow-lg lg:p-5">
+        <div className="lg:bg-bg-secondary rounded-md lg:shadow-lg lg:p-5">
           <div
             className={cn(
               'lg:max-w-sm text-slate-200 lg:text-inherit text-sm lg:text-base',
@@ -85,8 +85,8 @@ const FeaturedProject = ({
             )}
           >
             <p className="text-dark-1">{description}</p>
-            <div className="text-xs hidden lg:block capitalize font-mono text-accent my-3 lg:my-2 lg:mt-3">
-              tasks / achievements
+            <div className="text-xs hidden lg:block font-mono text-accent my-3 lg:my-2 lg:mt-3">
+              What is it about?
             </div>
             <div className="text-base hidden lg:block lg:text-sm">{tasks}</div>
           </div>
@@ -94,7 +94,7 @@ const FeaturedProject = ({
 
         <p
           className={cn(
-            'font-mono text-[10px] text-sky-400 lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-2 lg:gap-x-5 items-center lg:justify-end',
+            'font-mono text-[10px] text-sky-400 lg:text-accent lg:text-xs justify-center capitalize flex flex-wrap gap-x-3 lg:gap-x-5 items-center lg:justify-end',
             align === 'left' && 'lg:justify-start'
           )}
         >
