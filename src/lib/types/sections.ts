@@ -12,12 +12,16 @@ export interface Section {
   title: string;
 }
 
+export interface HeroSection {
+  title: string[];
+}
+
 export interface NavbarSectionType {
   navLinks: NavLinkType[];
   cta: CTAType;
 }
 
-export interface HeroSectionType extends Section {
+export interface HeroSectionType extends HeroSection {
   subtitle?: string;
   tagline: string;
   description?: string;

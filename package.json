@@ -20,6 +20,7 @@
     "next": "^13.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-type-animation": "^3.2.0",
     "save-dev": "^0.0.1-security",
     "sharp": "^0.31.3",
     "tailwind-merge": "^2.0.0",

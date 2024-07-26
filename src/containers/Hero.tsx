@@ -8,6 +8,8 @@ import { Button, Wrapper } from '@/components';
 import { slideUp } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+import { HERO_TITLE_DELAY } from '@/lib/utils/config';
 
 const Hero = () => {
   const { cta, subtitle, title, tagline, description, specialText } =
@@ -20,36 +22,39 @@ const Hero = () => {
   const getAnimationDelay = (i: number, increment = 0.15) =>
     DEFAULT_ANIMATION_DELAY + increment * i;
 
+  const titleSequence = title.flatMap((str) => [str, HERO_TITLE_DELAY]);
+
   return (
     <Wrapper
       id="hero"
-      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0"
+      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-5 xs:mt-0"
     >
-      <motion.p
-        variants={slideUp({ delay: getAnimationDelay(0) })}
-        initial="hidden"
-        animate="show"
-        className="font-mono text-sm md:text-base text-accent"
-      >
-        {subtitle}
-      </motion.p>
-
-      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-7xl">
+      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
+        <motion.p
+          variants={slideUp({ delay: getAnimationDelay(0) })}
+          initial="hidden"
+          animate="show"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-variant inline-block leading-[1.2]"
+        >
+          {subtitle}
+        </motion.p>
         <motion.h1
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
           animate="show"
-          className="text-slate-900 dark:text-slate-200 capitalize mb-2 leading-[1.1]"
+          className="text-slate-900 dark:text-slate-200 mb-2 leading-[1.1]"
         >
-          {title}
-        </motion.h1>
-        <motion.h1
-          variants={slideUp({ delay: getAnimationDelay(2) })}
-          initial="hidden"
-          animate="show"
-          className="leading-[1.2]"
-        >
-          {tagline}
+          <TypeAnimation
+            sequence={titleSequence}
+            speed={50}
+            style={{
+              color: 'inherit',
+              fontSize: 'text-4xl',
+              fontWeight: 'bold',
+              display: 'inline-block',
+            }}
+            repeat={Infinity}
+          />
         </motion.h1>
       </div>
 
@@ -57,7 +62,7 @@ const Hero = () => {
         variants={slideUp({ delay: getAnimationDelay(3) })}
         initial="hidden"
         animate="show"
-        className="max-w-xl text-base md:text-lg"
+        className="max-w-3xl text-base md:text-lg"
         style={{ whiteSpace: 'pre-line' }}
       >
         {description}
@@ -80,7 +85,7 @@ const Hero = () => {
           initial="hidden"
           animate="show"
           href={cta?.url ?? '#'}
-          className={`mt-5 xs:mt-8 md:mt-10 ${
+          className={`mt-5 xs:mt-8 md:mt-10 rounded-full ${
             cta.hideInDesktop ? 'md:hidden' : ''
           }`}
           sameTab={cta?.sameTab}
