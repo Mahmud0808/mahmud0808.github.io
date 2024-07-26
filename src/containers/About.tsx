@@ -10,7 +10,7 @@ import { getSectionAnimation } from '@/styles/animations';
 import { useEffect, useState } from 'react';
 
 const About = () => {
-  const { title, img, list } = aboutSection;
+  const { title, img, list, paragraphs } = aboutSection;
   // To avoid hydration error
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -23,13 +23,9 @@ const About = () => {
       <h2 className="heading-secondary">{title}</h2>
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
-          <p>
-            I’m a passionate developer eager to explore every tech stack,
-            especially in Android and web development.
-          </p>
-          <p>
-            My main focus these days is learning new technologies and finding a decent job.
-          </p>
+          {paragraphs.map((paragraph) => (
+            <p key={getId()}>{paragraph}</p>
+          ))}
 
           {list && (
             <>
