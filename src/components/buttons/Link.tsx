@@ -22,8 +22,8 @@ const Link = ({
         {...rest}
       >
         <span className="relative w-fit">
-          {children}
-          <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus:w-full bg-accent duration-300 ease-in-scroll"></span>
+          <p className="px-0.5">{children}</p>
+          <span className="absolute -bottom-1 left-0 h-[2px] w-0 rounded-full group-hover:w-full group-focus:w-full bg-accent duration-300 ease-in-scroll"></span>
         </span>
       </a>
     );
