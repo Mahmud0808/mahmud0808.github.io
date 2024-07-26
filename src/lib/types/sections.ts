@@ -4,6 +4,7 @@ import {
   FeaturedProjectType,
   NavLinkType,
   ProjectType,
+  SkillType,
   SocialLinkType,
 } from '.';
 
@@ -38,7 +39,7 @@ export interface AboutSectionType extends Section {
   img: string;
 }
 
-type SkillType = {
+type SkillsType = {
   id: string;
   title: string;
   lottie: {
@@ -50,7 +51,7 @@ type SkillType = {
 };
 
 export interface SkillsSectionType extends Section {
-  skills: SkillType[];
+  skills: SkillsType[];
 }
 
 export interface ExperienceSectionType extends Section {
