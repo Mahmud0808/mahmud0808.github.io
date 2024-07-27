@@ -20,7 +20,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'ResumeAI',
-      url: 'https://github.com/Mahmud0808/ResumeAI',
+      url: 'https://resume-ai-app.vercel.app/',
       repo: 'https://github.com/Mahmud0808/ResumeAI',
       img: 'https://i.postimg.cc/DnJHZ229/Resume-AI.png',
       year: 2024,
@@ -41,7 +41,6 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Next.js', icon: 'file-icons:nextjs' },
         { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
-        { name: 'MySQL', icon: 'tabler:brand-mysql' },
         { name: 'Clerk', icon: 'simple-icons:clerk' },
         { name: 'Appwrite', icon: 'logos:appwrite-icon' },
         { name: 'Sentry', icon: 'vscode-icons:file-type-sentry' },
@@ -50,7 +49,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Quirklr',
-      url: 'https://github.com/Mahmud0808/Quirklr',
+      url: 'https://quirklrapp.vercel.app/',
       repo: 'https://github.com/Mahmud0808/Quirklr',
       img: 'https://i.postimg.cc/hSL5JvrB/quirklr.png',
       year: 2024,
