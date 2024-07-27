@@ -33,7 +33,7 @@ const ProjectCard = ({
           if ((e.target as HTMLElement).closest('a')) return;
           window.open(url);
         }}
-        className="block w-full transition-all duration-200 rounded-md shadow-xl bg-bg-secondary dark:shadow-2xl hover:text-accent"
+        className="block w-full rounded-md shadow-xl bg-bg-secondary dark:shadow-2xl hover:text-accent"
       >
         <div className="overflow-hidden h-[200px] rounded-t-md">
           <Image
@@ -43,7 +43,7 @@ const ProjectCard = ({
             height={300}
             placeholder="blur"
             blurDataURL={blurImageURL}
-            className="object-cover w-full h-full transition-all duration-300 hover:scale-110 focus:scale-110"
+            className="object-cover w-full h-full transition-transform duration-300 hover:scale-110 focus:scale-110"
           />
         </div>
         <div className="p-4 py-3 space-y-1 rounded-b-md">
@@ -75,7 +75,7 @@ const ProjectCard = ({
               </a>
             </div>
           </div>
-          <h4 className="flex justify-between font-medium capitalize duration-200">
+          <h4 className="flex justify-between font-medium capitalize transition-colors duration-200">
             <span>{name}</span>
             <span className="mr-1">{year}</span>
           </h4>
