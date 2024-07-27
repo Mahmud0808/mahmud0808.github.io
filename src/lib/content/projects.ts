@@ -6,6 +6,22 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'MernAuth',
+      url: 'https://mernauth-mwjp.onrender.com/',
+      repo: 'https://github.com/Mahmud0808/MernAuth',
+      img: 'https://i.postimg.cc/L9gTVFCs/MernAuth.png',
+      year: 2024,
+      projectSkills: [
+        { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
+        { name: 'Express', icon: 'skill-icons:expressjs-light' },
+        { name: 'React', icon: 'vscode-icons:file-type-reactjs' },
+        { name: 'Node.js', icon: 'vscode-icons:file-type-node' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+        { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
+      ],
+    },
+    {
+      id: getId(),
       name: 'Melodify',
       url: 'https://github.com/Mahmud0808/Melodify',
       repo: 'https://github.com/Mahmud0808/Melodify',
