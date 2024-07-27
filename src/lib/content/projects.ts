@@ -45,6 +45,7 @@ export const projectsSection: ProjectsSectionType = {
         { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
         { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
         { name: 'Clerk', icon: 'simple-icons:clerk' },
+        { name: 'Gemini API', icon: 'logos:google-gemini' },
       ],
     },
     {
@@ -73,6 +74,7 @@ export const projectsSection: ProjectsSectionType = {
         { name: 'Next.js', icon: 'file-icons:nextjs' },
         { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
         { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
+        { name: 'Clerk', icon: 'simple-icons:clerk' },
       ],
     },
     {
@@ -122,7 +124,7 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
         { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
-        { name: 'Location Tracker', icon: 'jam:gps-f' },
+        { name: 'GPS Service', icon: 'jam:gps-f' },
       ],
     },
     {
