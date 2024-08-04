@@ -6,6 +6,22 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'NexuTalk',
+      url: 'https://nexutalk.vercel.app/',
+      repo: 'https://github.com/Mahmud0808/NexuTalk',
+      img: 'https://i.postimg.cc/FhzMbpVC/Screen-Shot-Tool-20240804191942.png',
+      year: 2024,
+      projectSkills: [
+        { name: 'Next.js', icon: 'file-icons:nextjs' },
+        { name: 'NextAuth.js', icon: 'noto-v1:shield' },
+        { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+        { name: 'Prisma', icon: 'simple-icons:prisma' },
+        { name: 'Pusher', icon: 'simple-icons:pusher' },
+      ],
+    },
+    {
+      id: getId(),
       name: 'MernAuth',
       url: 'https://mernauth-mwjp.onrender.com/',
       repo: 'https://github.com/Mahmud0808/MernAuth',
@@ -174,7 +190,10 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Java', icon: 'hugeicons:java' },
         { name: 'Shell Script', icon: 'vscode-icons:file-type-shell' },
-        { name: 'Preference Manager', icon: 'material-symbols:room-preferences-rounded' },
+        {
+          name: 'Preference Manager',
+          icon: 'material-symbols:room-preferences-rounded',
+        },
       ],
     },
     {
