@@ -16,7 +16,7 @@ export const socialLinks: StringKeyValueType = {
 
 export const author = {
   name: 'Mahmudul Hasan Khan',
-  email: 'crazymahmud08@gmail.com',
+  email: 'mhofficial2020@gmail.com',
 };
 
 export const seoData = {
