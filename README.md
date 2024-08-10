@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.postimg.cc/cd7xw2vK/Mahmudul-Hasan-Khan-Portfolio.png" alt="Project Banner">
+  <img src="https://i.postimg.cc/yVwLKQTP/Mahmudul-Hasan-Khan-Portfolio.png" alt="Project Banner">
   <br />
   <br />
 </div>

@@ -23,7 +23,7 @@ export const seoData = {
   title: 'Mahmudul Hasan Khan | Portfolio',
   description: 'Passionate about Android and web development, focusing on creating innovative digital solutions.',
   author: author.name,
-  image: 'https://i.postimg.cc/cd7xw2vK/Mahmudul-Hasan-Khan-Portfolio.png',
+  image: 'https://i.postimg.cc/yVwLKQTP/Mahmudul-Hasan-Khan-Portfolio.png',
   url: 'https://mahmud0808.github.io/',
   keywords: [
     'Mahmud',
