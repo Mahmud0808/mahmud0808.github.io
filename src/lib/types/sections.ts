@@ -13,7 +13,7 @@ export interface Section {
 }
 
 export interface HeroSection {
-  title: string[];
+  title: string;
 }
 
 export interface NavbarSectionType {
@@ -23,7 +23,7 @@ export interface NavbarSectionType {
 
 export interface HeroSectionType extends HeroSection {
   subtitle?: string;
-  tagline: string;
+  tagline: string[];
   description?: string;
   specialText?: string;
   cta?: CTAType & {

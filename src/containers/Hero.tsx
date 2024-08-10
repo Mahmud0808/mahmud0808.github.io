@@ -22,7 +22,7 @@ const Hero = () => {
   const getAnimationDelay = (i: number, increment = 0.15) =>
     DEFAULT_ANIMATION_DELAY + increment * i;
 
-  const titleSequence = title.flatMap((str) => [str, HERO_TITLE_DELAY]);
+  const taglineSequence = tagline.flatMap((str) => [str, HERO_TITLE_DELAY]);
 
   return (
     <Wrapper
@@ -42,10 +42,18 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
           animate="show"
-          className="text-slate-900 dark:text-slate-200 mb-2 leading-[1.1]"
+          className="text-slate-900 dark:text-slate-200 leading-[1.1]"
+        >
+          {title}
+        </motion.h1>
+        <motion.h1
+          variants={slideUp({ delay: getAnimationDelay(2) })}
+          initial="hidden"
+          animate="show"
+          className="leading-[1.2] mb-2 max-sm:mb-1"
         >
           <TypeAnimation
-            sequence={titleSequence}
+            sequence={taglineSequence}
             speed={50}
             style={{
               color: 'inherit',
