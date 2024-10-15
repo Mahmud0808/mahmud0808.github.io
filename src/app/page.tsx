@@ -9,13 +9,15 @@ import {
   Skills,
 } from '@/containers';
 
+import type { Metadata } from 'next';
 import type { NextPage } from 'next';
 
-/**
- * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)
- * TODO: Switch to next13 app dir feature, when lottie files start working in app dir
- * TODO: Try test cases
- */
+export const metadata: Metadata = {
+  robots: { index: true, follow: true },
+  other: {
+    "google-site-verification": "tuEELxkE7zuw6YSzuesy_71LuYE_C22T0qurgD-mFFg",
+  },
+};
 
 const Home: NextPage = () => {
   return (
