@@ -74,7 +74,7 @@ export const projectsSection: ProjectsSectionType = {
         { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
         { name: 'MongoDB', icon: 'vscode-icons:file-type-mongo' },
         { name: 'Clerk', icon: 'simple-icons:clerk' },
-        { name: 'Gemini API', icon: 'logos:google-gemini' },
+        { name: 'Gemini API', icon: 'ri:gemini-fill' },
       ],
     },
     {
