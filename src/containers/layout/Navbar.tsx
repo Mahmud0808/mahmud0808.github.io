@@ -74,6 +74,7 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
 const Navbar = () => {
   const { cta, navLinks } = navbarSection;
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const windowWidth = useWindowWidth();
   const md = getBreakpointsWidth('md');
@@ -83,13 +84,25 @@ const Navbar = () => {
     hideNavWhileScrolling({ when: !navbarCollapsed });
   }, [navbarCollapsed]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <motion.header
       variants={fadeIn(0.5)}
       initial="hidden"
       animate="show"
       id="navbar"
-      className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
+      className={`fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 ${scrollY > 0 ? 'backdrop-blur-lg' : ''}`}
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
         <Link href="/#hero" className="block">
