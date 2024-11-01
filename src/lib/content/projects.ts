@@ -14,7 +14,7 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Java', icon: 'hugeicons:java' },
         { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
-        { name: 'Maps', icon: 'logos:google-maps' },
+        { name: 'Maps API', icon: 'logos:google-maps' },
       ],
     },
     {
@@ -154,8 +154,8 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
         { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
-        { name: 'Maps', icon: 'logos:google-maps' },
-        { name: 'Gemini', icon: 'ri:gemini-fill' },
+        { name: 'Maps API', icon: 'logos:google-maps' },
+        { name: 'Gemini API', icon: 'ri:gemini-fill' },
       ],
     },
     {
@@ -167,7 +167,7 @@ export const projectsSection: ProjectsSectionType = {
       year: 2024,
       projectSkills: [
         { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
-        { name: 'Gemini API', icon: 'logos:google-gemini' },
+        { name: 'Gemini API', icon: 'ri:gemini-fill' },
       ],
     },
     {
