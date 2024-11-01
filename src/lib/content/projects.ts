@@ -6,6 +6,19 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Breakdown Assistance',
+      url: 'https://github.com/Mahmud0808/BreakdownAssistance',
+      repo: 'https://github.com/Mahmud0808/BreakdownAssistance',
+      img: 'https://i.ibb.co.com/72YrzCn/breakdown-assistance.png',
+      year: 2024,
+      projectSkills: [
+        { name: 'Java', icon: 'hugeicons:java' },
+        { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
+        { name: 'Maps', icon: 'logos:google-maps' },
+      ],
+    },
+    {
+      id: getId(),
       name: 'NexuTalk',
       url: 'https://nexutalk.vercel.app/',
       repo: 'https://github.com/Mahmud0808/NexuTalk',
@@ -103,6 +116,7 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Flutter', icon: 'vscode-icons:file-type-flutter' },
         { name: 'Dart', icon: 'vscode-icons:file-type-dartlang' },
+        { name: 'Node.js', icon: 'vscode-icons:file-type-node' },
       ],
     },
     {
@@ -140,7 +154,8 @@ export const projectsSection: ProjectsSectionType = {
       projectSkills: [
         { name: 'Kotlin', icon: 'vscode-icons:file-type-kotlin' },
         { name: 'Firebase', icon: 'vscode-icons:file-type-firebase' },
-        { name: 'GPS Service', icon: 'jam:gps-f' },
+        { name: 'Maps', icon: 'logos:google-maps' },
+        { name: 'Gemini', icon: 'ri:gemini-fill' },
       ],
     },
     {
