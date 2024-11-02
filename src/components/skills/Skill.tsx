@@ -41,7 +41,7 @@ const Skill = ({
 
         <ul className="space-y-2 text-base">
           {points.map((point) => (
-            <ListItem key={getId()}>{point}</ListItem>
+            <ListItem key={getId()} multiLine>{point}</ListItem>
           ))}
         </ul>
       </div>

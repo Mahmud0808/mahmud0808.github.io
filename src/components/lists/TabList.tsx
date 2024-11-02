@@ -54,11 +54,11 @@ const TabList = ({ experiences }: Props) => {
         {/* Slider */}
         <div
           style={sliderBackgroundStyle}
-          className="absolute h-0.5 w-full sm:w-1 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 max-sm:right-0 bg-dark-3"
+          className="absolute h-0.5 w-full sm:w-1 sm:h-full rounded-full md:rounded-none bottom-0 sm:inset-0 left-0 max-sm:right-0 bg-dark-3"
         ></div>
         <div
           style={sliderStyle}
-          className="absolute h-0.5 w-[120px] sm:w-1 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
+          className="absolute h-0.5 w-[120px] sm:w-1 sm:h-10 rounded-full md:rounded-none bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
         ></div>
       </div>
 
@@ -79,7 +79,7 @@ const TabList = ({ experiences }: Props) => {
 
         <ul className="space-y-2">
           {tasks.map((task) => (
-            <ListItem key={getId()}>{task}</ListItem>
+            <ListItem key={getId()} multiLine>{task}</ListItem>
           ))}
         </ul>
       </div>

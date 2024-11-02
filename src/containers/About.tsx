@@ -30,7 +30,7 @@ const About = () => {
           {list && (
             <>
               <p>{list.title}</p>
-              <ul className="grid w-2/3 grid-cols-2 gap-1 text-sm text-accent">
+              <ul className="grid w-2/3 grid-cols-2 gap-2 text-base">
                 {list.items.map((item) => (
                   <ListItem key={getId()}>{item}</ListItem>
                 ))}
