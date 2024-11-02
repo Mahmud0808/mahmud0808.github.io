@@ -31,7 +31,7 @@ const ProjectCard = ({
         onClick={(e) => {
           // Don't run this if the clicked target is an anchor element
           if ((e.target as HTMLElement).closest('a')) return;
-          window.open(url);
+          window.open(url, '_blank');
         }}
         className="block w-full rounded-md shadow-xl bg-bg-secondary dark:shadow-2xl hover:text-accent"
       >
@@ -47,18 +47,18 @@ const ProjectCard = ({
           />
         </div>
         <div className="p-4 py-3 space-y-1 rounded-b-md">
-          <div className="flex items-center justify-between">
+          <div className="flex justify-between">
             <p className="font-mono text-xs capitalize">
               <div
                 key={getId()}
-                className="flex flex-wrap justify-center gap-2"
+                className="flex flex-wrap justify-items-start gap-2"
               >
                 {projectSkills.map(({ name, icon }) => (
                   <ProjectSkillIcon key={getId()} src={icon} name={name} />
                 ))}
               </div>
             </p>
-            <div className="flex items-center space-x-1.5">
+            <div className="flex space-x-1.5 pt-[2px]">
               <a
                 href={repo}
                 className="block duration-200 text-text hover:text-accent rounded-sm"
