@@ -91,7 +91,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 href={cta?.url ?? '#'}
-                className={`rounded-full mr-2 md:mr-3 ${cta.hideInDesktop ? 'md:hidden' : ''} ${cta.hideInMobile ? 'hidden md:block' : ''}`}
+                className={`mr-2 md:mr-3 ${cta.hideInDesktop ? 'md:hidden' : ''} ${cta.hideInMobile ? 'hidden md:block' : ''}`}
                 sameTab={cta?.sameTab}
               >
                 {cta.title}

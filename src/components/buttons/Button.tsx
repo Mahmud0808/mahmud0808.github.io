@@ -47,7 +47,7 @@ const Button = (props: Props & MotionProps) => {
     center = false,
   } = props;
 
-  const classes = `${size === 'sm' ? 'p-2 px-4 text-sm border-[1.5px] ' : 'text-sm p-4 px-6 border-2'} block ${center ? 'mx-auto' : ''} w-fit font-mono capitalize rounded border-accent text-accent bg-bg hover:bg-accent-light focus:outline-none focus:bg-accent-light duration-0 cursor-pointer ${className}`;
+  const classes = `${size === 'sm' ? 'p-2 px-4 text-sm border-[1.5px] ' : 'text-sm p-4 px-6 border-2'} block ${center ? 'mx-auto' : ''} w-fit font-mono capitalize rounded-full border-accent text-accent bg-bg hover:bg-accent-light focus:outline-none focus:bg-accent-light duration-0 cursor-pointer ${className}`;
 
   if (props.type === 'link') {
     const { sameTab, ...motionProps } = props;

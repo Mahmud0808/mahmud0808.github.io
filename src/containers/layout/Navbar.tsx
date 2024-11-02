@@ -146,7 +146,7 @@ const Navbar = () => {
                   })}
                   initial="hidden"
                   animate="show"
-                  className="rounded-full border-[2px]"
+                  className="border-[2px] bg-transparent hover:bg-sky-500/10 dark:hover:bg-sky-400/10"
                 >
                   {cta.title}
                 </Button>
