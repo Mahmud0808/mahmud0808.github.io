@@ -26,9 +26,10 @@ export interface HeroSectionType extends HeroSection {
   tagline: string[];
   description?: string;
   specialText?: string;
-  cta?: CTAType & {
+  ctas?: (CTAType & {
     hideInDesktop?: boolean;
-  };
+    hideInMobile?: boolean;
+  })[];
 }
 
 export interface AboutSectionType extends Section {

@@ -79,7 +79,7 @@ export default function RootLayout({
         <script src="/scripts/no-flash.js" async />
       </head>
       <body className={`text-text bg-bg ${fontVariables}`}>
-        <Cursor className="hidden dark:lg:block" />
+        <Cursor className="hidden lg:block" />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

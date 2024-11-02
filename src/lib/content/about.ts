@@ -21,5 +21,5 @@ export const aboutSection: AboutSectionType = {
       'Next.js',
     ],
   },
-  img: '/mahmudul-hasan.png',
+  img: '/images/mahmudul-hasan.png',
 };

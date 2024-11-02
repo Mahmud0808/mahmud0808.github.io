@@ -12,5 +12,6 @@ export const navbarSection: NavbarSectionType = {
     cta: {
         title: 'resume',
         url: `/${resumeFileName}`,
+        sameTab: false,
     },
 }
