@@ -7,7 +7,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
     {
       id: getId(),
       name: 'Iconify',
-      description: 'Free and open-source android customizer application.',
+      description: 'Open-source Android theming application.',
       tasks: 'Iconify lets you customize your Android 12+ device easily. Change icons, colors, shapes, and even the notification panel for a personalized look that suits your style.',
       url: 'https://github.com/Mahmud0808/Iconify',
       img: 'https://i.postimg.cc/VzTtxw2M/iconify.png',

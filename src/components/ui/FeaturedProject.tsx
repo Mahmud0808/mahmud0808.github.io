@@ -25,7 +25,7 @@ const FeaturedProject = ({
   return (
     <motion.div
       className={cn(
-        'relative min-h-[280px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-lg lg:rounded-xl shadow-lg lg:shadow-none text-center lg:text-right',
+        'relative min-h-[220px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-lg lg:rounded-xl shadow-lg lg:shadow-none text-center lg:text-right',
         align === 'left' && 'lg:text-left'
       )}
       {...rest}
@@ -58,7 +58,7 @@ const FeaturedProject = ({
           'absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0',
           'lg:h-auto left-0 lg:left-auto top-0 right-auto lg:bg-none lg:text-inherit',
           'flex flex-col justify-end',
-          'bg-gradient-to-t from-black/80 group-hover:from-accent group-focus:from-accent',
+          'bg-gradient-to-t from-black/90 to-transparent group-hover:from-accent group-focus:from-accent',
           align === 'left' && 'lg:left-0'
         )}
       >
