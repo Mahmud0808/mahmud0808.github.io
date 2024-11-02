@@ -21,16 +21,17 @@ const About = () => {
   return domLoaded ? (
     <Wrapper id="about" {...getSectionAnimation}>
       <h2 className="heading-secondary">{title}</h2>
-      <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
+      <main className="flex flex-col items-center justify-between gap-10 md:gap-16 lg:items-start lg:flex-row-reverse">
+        <AuthorImage src={img} alt={author.name} />
         <div className="space-y-4 lg:w-3/5">
           {paragraphs.map((paragraph) => (
-            <p key={getId()}>{paragraph}</p>
+            <p key={getId()} className="text-justify">{paragraph}</p>
           ))}
 
           {list && (
             <>
               <p>{list.title}</p>
-              <ul className="grid w-2/3 grid-cols-2 gap-2 text-base">
+              <ul className="grid w-full sm:w-2/3 grid-cols-2 gap-2 text-base">
                 {list.items.map((item) => (
                   <ListItem key={getId()}>{item}</ListItem>
                 ))}
@@ -38,7 +39,6 @@ const About = () => {
             </>
           )}
         </div>
-        <AuthorImage src={img} alt={author.name} />
       </main>
     </Wrapper>
   ) : (
