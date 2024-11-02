@@ -44,7 +44,7 @@ const TabList = ({ experiences }: Props) => {
           <button
             key={getId()}
             className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${
-              i === activeExperience ? 'text-accent' : ''
+              i === activeExperience ? 'text-accent bg-accent-light' : ''
             }`}
             onClick={() => setActiveExperience(i)}
           >
@@ -54,11 +54,11 @@ const TabList = ({ experiences }: Props) => {
         {/* Slider */}
         <div
           style={sliderBackgroundStyle}
-          className="absolute h-0.5 w-full sm:w-0.5 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 max-sm:right-0 bg-dark-3"
+          className="absolute h-0.5 w-full sm:w-1 sm:h-full rounded-full bottom-0 sm:inset-0 left-0 max-sm:right-0 bg-dark-3"
         ></div>
         <div
           style={sliderStyle}
-          className="absolute h-0.5 w-[120px] sm:w-0.5 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
+          className="absolute h-0.5 w-[120px] sm:w-1 sm:h-10 rounded-full bg-accent bottom-0 left-0 sm:inset-0 transition-all duration-250 delay-100 in-scroll"
         ></div>
       </div>
 
