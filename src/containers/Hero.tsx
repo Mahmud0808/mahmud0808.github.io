@@ -32,7 +32,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.05 }}>
-          <Image alt="" width={530} height={530} className="absolute bottom-full right-full -mr-48 lg:-mr-72 -m-64 opacity-50" src="/images/glassify/blur-cyan.png" />
+          <Image alt="" width={530} height={530} className="absolute bottom-full right-full -mr-48 lg:-mr-72 -m-64 opacity-50 pointer-events-none" src="/images/glassify/blur-cyan.png" />
         </motion.div>
         <div className="flex flex-col gap-6 xs:gap-5 mt-5">
           <div className="max-w-4xl font-bold tracking-tighter text-3xl md:text-5xl lg:text-7xl">
@@ -142,8 +142,8 @@ const Hero = () => {
             </svg>
           </div>
           <div className="relative">
-            <Image alt="" src="/images/glassify/blur-cyan.png" width={530} height={530} className="absolute -top-96 -right-72 opacity-80 dark:opacity-100" />
-            <Image alt="" src="/images/glassify/blur-indigo.png" width={567} height={567} className="absolute -bottom-8 -right-52 opacity-80 dark:opacity-100" />
+            <Image alt="" src="/images/glassify/blur-cyan.png" width={530} height={530} className="absolute -top-96 -right-72 opacity-80 dark:opacity-100 pointer-events-none" />
+            <Image alt="" src="/images/glassify/blur-indigo.png" width={567} height={567} className="absolute -bottom-8 -right-52 opacity-80 dark:opacity-100 pointer-events-none" />
           </div>
         </div>
       </motion.div>
