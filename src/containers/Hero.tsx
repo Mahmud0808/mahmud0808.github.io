@@ -58,12 +58,14 @@ const Hero = () => {
               <TypeAnimation
                 sequence={taglineSequence}
                 speed={50}
+                cursor={false}
+                repeat={Infinity}
+                className="type"
                 style={{
                   color: 'inherit',
                   fontWeight: 'bold',
                   display: 'inline-block',
-                }}
-                repeat={Infinity} />
+                }} />
             </motion.h1>
           </div>
           <motion.p
