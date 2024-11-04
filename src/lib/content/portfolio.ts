@@ -11,7 +11,7 @@ export const socialLinks: StringKeyValueType = {
   instagram: 'https://instagram.com/DrDisagree',
   twitter: 'https://twitter.com/DrDisagree',
   github: 'https://github.com/Mahmud0808',
-  linkedin: 'https://www.linkedin.com/in/drdisagree',
+  linkedin: 'https://www.linkedin.com/in/mahmud0808',
 };
 
 export const author = {
