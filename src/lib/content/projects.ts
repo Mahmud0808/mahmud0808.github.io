@@ -9,7 +9,7 @@ export const projectsSection: ProjectsSectionType = {
       name: 'Breakdown Assistance',
       url: 'https://github.com/Mahmud0808/BreakdownAssistance',
       repo: 'https://github.com/Mahmud0808/BreakdownAssistance',
-      img: 'https://i.ibb.co.com/72YrzCn/breakdown-assistance.png',
+      img: 'https://i.postimg.cc/3Jsq0QGT/Breakdown-Assistance.png',
       year: 2024,
       projectSkills: [
         { name: 'Java', icon: 'hugeicons:java' },
