@@ -6,6 +6,18 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Exam Timer',
+      url: 'https://quiktimer.vercel.app',
+      repo: 'https://github.com/Mahmud0808/ExamTimer',
+      img: 'https://i.postimg.cc/1Xtd7rQS/Exam-Timer.png',
+      year: 2024,
+      projectSkills: [
+        { name: 'Next.js', icon: 'file-icons:nextjs' },
+        { name: 'Tailwind CSS', icon: 'vscode-icons:file-type-tailwind' },
+      ],
+    },
+    {
+      id: getId(),
       name: 'Breakdown Assistance',
       url: 'https://github.com/Mahmud0808/BreakdownAssistance',
       repo: 'https://github.com/Mahmud0808/BreakdownAssistance',
