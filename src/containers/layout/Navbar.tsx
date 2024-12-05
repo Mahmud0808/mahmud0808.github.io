@@ -10,7 +10,7 @@ import { fadeIn, slideIn } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 /**
  * Hides the navbar while scrolling down
@@ -75,6 +75,7 @@ const Navbar = () => {
   const { cta, navLinks } = navbarSection;
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   const windowWidth = useWindowWidth();
   const md = getBreakpointsWidth('md');
@@ -96,16 +97,44 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
+        setNavbarCollapsed(false);
+      }
+    };
+
+    if (navbarCollapsed && windowWidth < md) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [navbarCollapsed, windowWidth]);
+
   return (
     <motion.header
       variants={fadeIn(0.5)}
       initial="hidden"
       animate="show"
       id="navbar"
-      className={`fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 ${scrollY > 0 ? 'backdrop-blur-lg' : ''}`}
+      ref={navbarRef}
+      className={`fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 ${
+        scrollY > 0 ? 'backdrop-blur-lg' : ''
+      }`}
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
-        <Link href="/#hero" className="block">
+        <Link
+          href="/#hero"
+          className="block"
+          onClick={() => setNavbarCollapsed(false)}
+        >
           <p className="pr-1">{author.name}</p>
           <div className="absolute bottom-1.5 left-0 h-[1.5px] w-0 group-hover:w-full bg-accent duration-300"></div>
         </Link>
