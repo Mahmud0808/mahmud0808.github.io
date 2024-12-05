@@ -8,7 +8,7 @@ type Props = {
 
 const ShowLottie = ({ path, className = '' }: Props) => {
   return (
-    <div className={`max-w-sm md:max-w-md ${className}`}>
+    <div className={`max-w-sm md:max-w-md !z-40 ${className}`}>
       <Player autoplay loop src={path}></Player>
     </div>
   );

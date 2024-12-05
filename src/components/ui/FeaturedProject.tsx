@@ -25,7 +25,7 @@ const FeaturedProject = ({
   return (
     <motion.div
       className={cn(
-        'relative min-h-[220px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-lg lg:rounded-xl shadow-lg lg:shadow-none text-center lg:text-right',
+        'relative min-h-[220px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-lg lg:rounded-xl shadow-lg lg:shadow-none text-center lg:text-right !z-40',
         align === 'left' && 'lg:text-left'
       )}
       {...rest}

@@ -26,7 +26,7 @@ const ProjectCard = ({
   }, []);
 
   return domLoaded ? (
-    <motion.div {...rest} className="w-full max-w-[350px]">
+    <motion.div {...rest} className="w-full max-w-[350px] !z-40">
       <button
         onClick={(e) => {
           // Don't run this if the clicked target is an anchor element
@@ -43,7 +43,7 @@ const ProjectCard = ({
             height={300}
             placeholder="blur"
             blurDataURL={blurImageURL}
-            className="object-cover w-full h-full transition-transform duration-300 hover:scale-110 focus:scale-110"
+            className="object-cover w-full h-full transition-transform duration-300 hover:scale-105 focus:scale-105"
           />
         </div>
         <div className="p-4 py-3 space-y-1 rounded-b-md">
